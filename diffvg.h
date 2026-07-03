@@ -94,9 +94,11 @@ inline void swap_(T &a, T &b) {
     b = tmp;
 }
 
+#ifndef _MSC_VER
 inline double log2(double x) {
     return log(x) / log(Real(2));
 }
+#endif
 
 template <typename T>
 DEVICE
